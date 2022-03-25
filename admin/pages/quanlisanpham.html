@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <title>
+        Quản lý cửa hàng
+    </title>
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/material-dashboard.css?v=3.0.0" rel="stylesheet" />
+</head>
+
+<body class="g-sidenav-show  bg-gray-200">
+    <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark" id="sidenav-main">
+        <div class="sidenav-header">
+            <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+            <a class="navbar-brand m-0" target="_blank">
+                <img src="../assets/img/logo-ct.png" class="navbar-brand-img h-100" alt="main_logo">
+                <span class="ms-1 font-weight-bold text-white">Quản Lý Website</span>
+            </a>
+        </div>
+        <hr class="horizontal light mt-0 mb-2">
+        <div class="collapse navbar-collapse  w-auto  max-height-vh-100" id="sidenav-collapse-main">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white active bg-gradient-primary" href="dashboard.html">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Trang admin</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="danhmucsanpham.html">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Danh mục sản phẩm</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="quanlisanpham.html">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Quản lý sản phẩm</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="quanlidonhang.html">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Quản lý đơn hàng</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="quanlinguoidung.html">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Quản lý người dùng</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="tintuc.html">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Tin tức</span>
+                    </a>
+                </li>
+                <li class="nav-item mt-3">
+                    <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Tài khoản</h6>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="lienhe.html">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Liên hệ</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="dangnhap.html">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Đăng nhập</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="dangxuat.html">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Đăng xuất</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidenav-footer position-absolute w-100 bottom-0 ">
+            <div class="mx-3">
+                <a class="btn bg-gradient-primary mt-4 w-100" href="https://www.creative-tim.com/product/material-dashboard-pro?ref=sidebarfree" type="button">Nâng cấp phiên bản mới</a>
+            </div>
+        </div>
+    </aside>
+    <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+        <!-- Navbar -->
+        <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" navbar-scroll="true">
+            <div class="container-fluid py-1 px-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+                        <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Trang</a></li>
+                        <li class="breadcrumb-item text-sm text-dark active" aria-current="page">quản lí sản phẩm</li>
+                    </ol>
+                    <h6 class="font-weight-bolder mb-0">Trang quản lí sản phẩm</h6>
+                </nav>
+                <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+                    <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                        <div class="input-group input-group-outline">
+                            <label class="form-label">Nhập thông tin ...</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <ul class="navbar-nav  justify-content-end">
+                        <li class="nav-item d-flex align-items-center">
+                            <a href="javascript:;" class="nav-link text-body font-weight-bold px-0">
+                                <i class="fa fa-user me-sm-1"></i>
+                                <span class="d-sm-inline d-none">Đăng nhập</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+                            <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
+                                <div class="sidenav-toggler-inner">
+                                    <i class="sidenav-toggler-line"></i>
+                                    <i class="sidenav-toggler-line"></i>
+                                    <i class="sidenav-toggler-line"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item px-3 d-flex align-items-center">
+                            <a href="javascript:;" class="nav-link text-body p-0">
+                                <i class="fa fa-cog fixed-plugin-button-nav cursor-pointer"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown pe-2 d-flex align-items-center">
+                            <a href="javascript:;" class="nav-link text-body p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-bell cursor-pointer"></i>
+                            </a>
+                            <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4" aria-labelledby="dropdownMenuButton">
+                                <li class="mb-2">
+                                    <a class="dropdown-item border-radius-md" href="javascript:;">
+                                        <div class="d-flex py-1">
+                                            <div class="my-auto">
+                                                <img src="./assets/img/team-2.jpg" class="avatar avatar-sm  me-3 ">
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="text-sm font-weight-normal mb-1">
+                                                    <span class="font-weight-bold">New message</span> from Laur
+                                                </h6>
+                                                <p class="text-xs text-secondary mb-0">
+                                                    <i class="fa fa-clock me-1"></i> 13 minutes ago
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="dropdown-item border-radius-md" href="javascript:;">
+                                        <div class="d-flex py-1">
+                                            <div class="my-auto">
+                                                <img src="./assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm bg-gradient-dark  me-3 ">
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="text-sm font-weight-normal mb-1">
+                                                    <span class="font-weight-bold">New album</span> by Travis Scott
+                                                </h6>
+                                                <p class="text-xs text-secondary mb-0">
+                                                    <i class="fa fa-clock me-1"></i> 1 day
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item border-radius-md" href="javascript:;">
+                                        <div class="d-flex py-1">
+                                            <div class="avatar avatar-sm bg-gradient-secondary  me-3  my-auto">
+                                                <svg width="12px" height="12px" viewBox="0 0 43 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <title>credit-card</title>
+                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-2169.000000, -745.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                              <g transform="translate(1716.000000, 291.000000)">
+                                <g transform="translate(453.000000, 454.000000)">
+                                  <path class="color-background" d="M43,10.7482083 L43,3.58333333 C43,1.60354167 41.3964583,0 39.4166667,0 L3.58333333,0 C1.60354167,0 0,1.60354167 0,3.58333333 L0,10.7482083 L43,10.7482083 Z" opacity="0.593633743"></path>
+                                  <path class="color-background" d="M0,16.125 L0,32.25 C0,34.2297917 1.60354167,35.8333333 3.58333333,35.8333333 L39.4166667,35.8333333 C41.3964583,35.8333333 43,34.2297917 43,32.25 L43,16.125 L0,16.125 Z M19.7083333,26.875 L7.16666667,26.875 L7.16666667,23.2916667 L19.7083333,23.2916667 L19.7083333,26.875 Z M35.8333333,26.875 L28.6666667,26.875 L28.6666667,23.2916667 L35.8333333,23.2916667 L35.8333333,26.875 Z"></path>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="text-sm font-weight-normal mb-1">
+                                                    Payment successfully completed
+                                                </h6>
+                                                <p class="text-xs text-secondary mb-0">
+                                                    <i class="fa fa-clock me-1"></i> 2 days
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="container-fluid py-4">
+            <div class="row">
+                <section class="ftco-section">
+                    <div class="container">
+                        <input class="btn btn-outline-info" type="submit" value="Thêm">
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <div class="table-wrap">
+                                    <table class="table">
+                                        <thead class="thead-primary">
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Tên sản phẩm</th>
+                                                <th>Hình ảnh</th>
+                                                <th>Tên danh mục</th>
+                                                <th>Số lượng</th>
+                                                <th>Giá</th>
+                                                <th> </th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" class="scope">1</th>
+                                                <th>Áo thun unisex Nam</th>
+                                                <th><img src="https://mcdn.nhanh.vn/store/25618/artCT/87825/ao_thun_unisex_nam_1.jpg" style="width:100%;height:100%;"></th>
+                                                <th>Áo</th>
+                                                <th>1</th>
+                                                <th>100.000 vnđ</th>
+                                                <td><a href="#" class="btn btn-primary">xóa</a>
+                                                    <a href="#" class="btn btn-dark">cập nhật</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="scope">2</th>
+                                                <th>Quần joker unisex</th>
+                                                <th><img src="data:image/jpeg;base64,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"
+                                                        style="width:100%;height:100%;"></th>
+                                                <th>Quần</th>
+                                                <th>1</th>
+                                                <th>100.000 vnđ</th>
+                                                <td><a href="#" class="btn btn-primary">xóa</a>
+                                                    <a href="#" class="btn btn-dark">cập nhật</a></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <div class="fixed-plugin">
+        <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
+            <i class="material-icons py-2">settings</i>
+        </a>
+        <div class="card shadow-lg">
+            <div class="card-header pb-0 pt-3">
+                <div class="float-start">
+                    <h5 class="mt-3 mb-0">Material UI Configurator</h5>
+                    <p>See our dashboard options.</p>
+                </div>
+                <div class="float-end mt-4">
+                    <button class="btn btn-link text-dark p-0 fixed-plugin-close-button">
+            <i class="material-icons">clear</i>
+          </button>
+                </div>
+                <!-- End Toggle Button -->
+            </div>
+            <hr class="horizontal dark my-1">
+            <div class="card-body pt-sm-3 pt-0">
+                <!-- Sidebar Backgrounds -->
+                <div>
+                    <h6 class="mb-0">Sidebar Colors</h6>
+                </div>
+                <a href="javascript:void(0)" class="switch-trigger background-color">
+                    <div class="badge-colors my-2 text-start">
+                        <span class="badge filter bg-gradient-primary active" data-color="primary" onclick="sidebarColor(this)"></span>
+                        <span class="badge filter bg-gradient-dark" data-color="dark" onclick="sidebarColor(this)"></span>
+                        <span class="badge filter bg-gradient-info" data-color="info" onclick="sidebarColor(this)"></span>
+                        <span class="badge filter bg-gradient-success" data-color="success" onclick="sidebarColor(this)"></span>
+                        <span class="badge filter bg-gradient-warning" data-color="warning" onclick="sidebarColor(this)"></span>
+                        <span class="badge filter bg-gradient-danger" data-color="danger" onclick="sidebarColor(this)"></span>
+                    </div>
+                </a>
+                <!-- Sidenav Type -->
+                <div class="mt-3">
+                    <h6 class="mb-0">Sidenav Type</h6>
+                    <p class="text-sm">Choose between 2 different sidenav types.</p>
+                </div>
+                <div class="d-flex">
+                    <button class="btn bg-gradient-dark px-3 mb-2 active" data-class="bg-gradient-dark" onclick="sidebarType(this)">Dark</button>
+                    <button class="btn bg-gradient-dark px-3 mb-2 ms-2" data-class="bg-transparent" onclick="sidebarType(this)">Transparent</button>
+                    <button class="btn bg-gradient-dark px-3 mb-2 ms-2" data-class="bg-white" onclick="sidebarType(this)">White</button>
+                </div>
+                <p class="text-sm d-xl-none d-block mt-2">You can change the sidenav type just on desktop view.</p>
+                <!-- Navbar Fixed -->
+                <div class="mt-3 d-flex">
+                    <h6 class="mb-0">Navbar Fixed</h6>
+                    <div class="form-check form-switch ps-0 ms-auto my-auto">
+                        <input class="form-check-input mt-1 ms-auto" type="checkbox" id="navbarFixed" onclick="navbarFixed(this)">
+                    </div>
+                </div>
+                <hr class="horizontal dark my-3">
+                <div class="mt-2 d-flex">
+                    <h6 class="mb-0">Light / Dark</h6>
+                    <div class="form-check form-switch ps-0 ms-auto my-auto">
+                        <input class="form-check-input mt-1 ms-auto" type="checkbox" id="dark-version" onclick="darkMode(this)">
+                    </div>
+                </div>
+                <hr class="horizontal dark my-sm-4">
+                <a class="btn btn-outline-dark w-100" href="">View documentation</a>
+                <div class="w-100 text-center">
+                    <a class="github-button" href="https://github.com/creativetimofficial/material-dashboard" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star creativetimofficial/material-dashboard on GitHub">Star</a>
+                    <h6 class="mt-3">Thank you for sharing!</h6>
+                    <a href="https://twitter.com/intent/tweet?text=Check%20Material%20UI%20Dashboard%20made%20by%20%40CreativeTim%20%23webdesign%20%23dashboard%20%23bootstrap5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fsoft-ui-dashboard" class="btn btn-dark mb-0 me-2"
+                        target="_blank">
+                        <i class="fab fa-twitter me-1" aria-hidden="true"></i> Tweet
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.html?u=https://www.creative-tim.com/product/material-dashboard" class="btn btn-dark mb-0 me-2" target="_blank">
+                        <i class="fab fa-facebook-square me-1" aria-hidden="true"></i> Share
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+
+    <script>
+        var win = navigator.platform.indexOf('Win') > -1;
+        if (win && document.querySelector('#sidenav-scrollbar')) {
+            var options = {
+                damping: '0.5'
+            }
+            Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+        }
+    </script>
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="./assets/js/material-dashboard.min.js?v=3.0.0"></script>
+</body>
+
+</html>
